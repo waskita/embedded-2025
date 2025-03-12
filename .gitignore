@@ -1,0 +1,13 @@
+
+.ipynb_checkpoints/switchbounce-checkpoint.ipynb
+.ipynb_checkpoints/Untitled-checkpoint.ipynb
+input.jpg
+switch.csv
+switchbounce/bin/Debug/switchbounce.exe
+switchbounce/obj/Debug/main.o
+toggle.csv
+toggle/bin/Debug/toggle.exe
+toggle/toggle.depend
+*.o
+toggle_output.csv
+toggle_output.jpg
