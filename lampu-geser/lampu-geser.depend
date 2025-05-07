@@ -8,3 +8,13 @@
 	<stdio.h>
 	<stdlib.h>
 
+1746604544 source:c:\work\embedded-2025\lampu-geser\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fsm.h"
+
+1746603782 source:c:\work\embedded-2025\lampu-geser\fsm.c
+	"fsm.h"
+
+1746603066 c:\work\embedded-2025\lampu-geser\fsm.h
+

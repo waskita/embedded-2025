@@ -31,6 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="fsm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fsm.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
