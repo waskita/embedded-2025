@@ -1,3 +1,4 @@
+// integrasi menggunakan delay() sebagai sumber waktu
 #define WEMOS_LED_BUILTIN 22
 
 #define LAMPU_1 12
@@ -105,7 +106,7 @@ void delay_500() {
 // cek fsm edge detect
 
 void loop() {
-  int bounce_delay = 10;
+  int bounce_delay = 100; // dalam unit time
   int input_ki, input_ka;
   input_ki = digitalRead(SWITCH_1);
   input_ka = digitalRead(SWITCH_2);
