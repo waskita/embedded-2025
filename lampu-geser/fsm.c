@@ -13,7 +13,7 @@ void FSM_debounce(int input, int *state, int *counter,int *output, int delay)
     int next_state = *state; // default: tidak ganti state
     if (*state==FSM_DEBOUNCE_STATE_0)
     {
-        if(input==1 && *counter>delay)
+        if(input==1 && *counter>=delay)
         {
             next_state=FSM_DEBOUNCE_STATE_1;
             *counter=0;
@@ -22,12 +22,17 @@ void FSM_debounce(int input, int *state, int *counter,int *output, int delay)
         else
         {
             (*counter)++;
+            if((*counter)>=delay) // limit counter supaya tidak overflow
+            {
+                *counter=delay;
+            }
+
         }
 
     }
     if (*state==FSM_DEBOUNCE_STATE_1)
     {
-        if(input==0 && *counter>delay)
+        if(input==0 && *counter>=delay)
         {
             next_state=FSM_DEBOUNCE_STATE_0;
             *counter=0;
@@ -36,6 +41,11 @@ void FSM_debounce(int input, int *state, int *counter,int *output, int delay)
         else
         {
             (*counter)++;
+            // limit counter di delay, supaya tidak overflow
+            if((*counter)>=delay)
+            {
+                *counter=delay;
+            }
         }
     }
     *state=next_state;

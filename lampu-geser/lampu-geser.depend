@@ -1,12 +1,13 @@
 # depslib dependency file v1.0
-1746587351 source:e:\work\embedded-2025\lampu-geser\fsm.c
+1746616963 source:e:\work\embedded-2025\lampu-geser\fsm.c
 	"fsm.h"
 
-1746587044 e:\work\embedded-2025\lampu-geser\fsm.h
+1746612049 e:\work\embedded-2025\lampu-geser\fsm.h
 
-1746587642 source:e:\work\embedded-2025\lampu-geser\main.c
+1746616859 source:e:\work\embedded-2025\lampu-geser\main.c
 	<stdio.h>
 	<stdlib.h>
+	"fsm.h"
 
 1746604544 source:c:\work\embedded-2025\lampu-geser\main.c
 	<stdio.h>
