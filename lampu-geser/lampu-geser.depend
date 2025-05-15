@@ -2,9 +2,9 @@
 1746616963 source:e:\work\embedded-2025\lampu-geser\fsm.c
 	"fsm.h"
 
-1746612049 e:\work\embedded-2025\lampu-geser\fsm.h
+1746623942 e:\work\embedded-2025\lampu-geser\fsm.h
 
-1746616859 source:e:\work\embedded-2025\lampu-geser\main.c
+1746625430 source:e:\work\embedded-2025\lampu-geser\main.c
 	<stdio.h>
 	<stdlib.h>
 	"fsm.h"

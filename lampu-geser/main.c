@@ -7,9 +7,13 @@
 int main()
 {
     printf("%s\n",__FILE__);
+    printf("Uji Debouncer\n");
     uji_fsm_debounce();
-    uji_fsm_geser();
+    printf("Uji Edge Detector\n");
     uji_fsm_edge_detect();
+    printf("Uji FSM Geser\n");
+    uji_fsm_geser();
+    printf("Uji Integrasi\n");
     uji_integrasi();
     return 0;
 }
@@ -191,7 +195,7 @@ void uji_integrasi()
     char output_filename[]="integrasi.csv";
 
     FILE *out_f ;
-    int delay=10;
+    int bounce_delay=10;
     int debounce_ki_state; // kiri
     int debounce_ki_counter;
     int debounce_ki_output;
@@ -273,8 +277,8 @@ void uji_integrasi()
             input_ka=1;
         }
 
-        FSM_debounce(input_ki,&debounce_ki_state,&debounce_ki_counter,&debounce_ki_output,delay);
-        FSM_debounce(input_ka,&debounce_ka_state,&debounce_ka_counter,&debounce_ka_output,delay);
+        FSM_debounce(input_ki,&debounce_ki_state,&debounce_ki_counter,&debounce_ki_output,bounce_delay);
+        FSM_debounce(input_ka,&debounce_ka_state,&debounce_ka_counter,&debounce_ka_output,bounce_delay);
         FSM_edge_detect(debounce_ki_output,&edge_ki_state,&edge_ki_output);
         FSM_edge_detect(debounce_ka_output,&edge_ka_state,&edge_ka_output);
         FSM_geser(edge_ki_output,edge_ka_output,&geser_state,&geser_output);
