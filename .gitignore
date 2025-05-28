@@ -503,3 +503,6 @@ pintu-analisis/images/pintu_0479.png
 pintu-analisis/images/pintu_0480.png
 pintu-analisis/images.zip
 pintu-analisis/.ipynb_checkpoints/analisis-pintu-checkpoint.ipynb
+*.MP4
+*.png
+pintu-analisis/.ipynb_checkpoints/Untitled-checkpoint.ipynb
